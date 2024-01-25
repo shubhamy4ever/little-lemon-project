@@ -1,0 +1,116 @@
+/* navigation bar */
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+ul>li {
+    padding: 20px 30px;
+    list-style: none;
+    font-weight: 700;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav>ul>li:hover {
+    background-color: var(--yellow);
+}
+
+/* hero section */
+
+#aside-hero {
+    grid-area: asidehero;
+    text-wrap: pretty;
+    padding: 40px;
+    padding-left: 80px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#image-hero {
+    grid-area: imagehero;
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+#herosection {
+    height: 300px;
+    background-color: var(--olive-green);
+    display: grid;
+    grid-template: "asidehero imagehero";
+    grid-template-columns: 60vw 40vw;
+}
+
+#image-hero>img {
+    border-radius: 50px;
+    margin-top: 21px;
+    height: 360px;
+    width: 460px;
+}
+
+#aside-hero>h1 {
+    color: var(--yellow);
+}
+
+#aside-hero>h4 {
+    color: var(--white);
+}
+
+#aside-hero>p {
+    color: var(--white);
+    margin-top: 4px;
+}
+
+
+
+/* media query to make it vertical on mobile */
+
+@media only screen and (max-width: 600px) {
+    #herosection {
+        grid-template: "asidehero";
+        grid-template-columns: repeat(1, 100vw);
+    }
+
+    #image-hero {
+        display: none;
+    }
+}
+
+
+/* Special dishes */
+
+#order-online-header {
+    grid-area: orderOnlineArea;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+#week-special-container {
+    grid-area: weekSpecialArea;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+#specialdetails {
+    display: grid;
+    grid-template: "orderOnlineArea"
+        "weekSpecialArea";
+    padding: 20px;
+
+}
+
+.food-details-container {
+    margin: 20px;
+    width: 300px;
+}

@@ -5,6 +5,7 @@ import Testimonials from '../../components/homepage/Testimonials'
 import ResturantDetail from '../../components/homepage/ResturantDetail'
 import NavigationBar from '../../components/homepage/NavigationBar'
 import FooterSection from '../../components/homepage/FooterSection'
+import "./homepage.css";
 
 const HomePage = () => {
   return (
@@ -16,7 +17,7 @@ const HomePage = () => {
         <Testimonials />
         <ResturantDetail />
     </main>
-    <FooterSection />
+        <FooterSection />
     </>
   )
 }
