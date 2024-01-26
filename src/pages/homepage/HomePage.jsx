@@ -10,14 +10,14 @@ import "./homepage.css";
 const HomePage = () => {
   return (
     <>
-    <NavigationBar />
-    <main>
+      <NavigationBar />
+      <main>
         <HeroSection />
         <SpecialDishes />
         <Testimonials />
         <ResturantDetail />
-    </main>
-        <FooterSection />
+      </main>
+      <FooterSection />
     </>
   )
 }
