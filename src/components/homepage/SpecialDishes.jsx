@@ -11,19 +11,19 @@ const SpecialDishes = () => {
     "title": "Mushroom",
     "description": "parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis",
     "price": "$9.92",
-    "image": "http://dummyimage.com/250x250.png/dddddd/000000"
+    "image": "https://cdn2.foodviva.com/static-content/food-images/carrot-recipes/instant-pot-carrot-halwa/instant-pot-carrot-halwa-250.jpg"
   }, {
     "id": 2,
     "title": "Muffin Mix",
     "description": "quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id quam fringilla quam fringilla quam fringilla",
     "price": "$8.45",
-    "image": "http://dummyimage.com/250x250.png/dddddd/000000"
+    "image": "https://food.theffeed.com/wp-content/uploads/sites/7/2024/01/veggie_pizza-2-e1705588115938-250x250.jpg"
   }, {
     "id": 3,
     "title": "Grouper",
     "description": "et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut",
     "price": "$8.03",
-    "image": "http://dummyimage.com/250x250.png/dddddd/000000"
+    "image": "https://thefamiliarkitchen.com/wp-content/uploads/2019/06/5-IMG_5593-250x250.jpg"
   }]
 
   return (

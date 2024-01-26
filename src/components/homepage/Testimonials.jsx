@@ -15,13 +15,13 @@ const Testimonials = () => {
     "name": "Isabelle",
     "rating": 8,
     "review": "staff were ambitous",
-    "image": "http://dummyimage.com/60x60.png/5fa2dd/ffffff"
+    "image": "http://dummyimage.com/60x60.png/9fa2dd/ffffff"
   }, {
     "id": 3,
     "name": "Linn",
     "rating": 2,
     "review": "love the food",
-    "image": "http://dummyimage.com/60x60.png/5fa2dd/ffffff"
+    "image": "http://dummyimage.com/60x60.png/5df3f6/ffffff"
   }, {
     "id": 4,
     "name": "Hendrik",
