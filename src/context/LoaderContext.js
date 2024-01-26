@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react'
 
 
-const LoaderContext = createContext(null);
+const LoaderContext = createContext(false);
 
 const LoaderProvider = ({ children }) => {
 

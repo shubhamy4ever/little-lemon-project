@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react'
 
-const AlertContext = createContext();
+const AlertContext = createContext("");
 
 
 const AlertContextProvider = ({ children }) => {
