@@ -329,6 +329,13 @@ footer li:hover {
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.connect-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .food-details-container img {

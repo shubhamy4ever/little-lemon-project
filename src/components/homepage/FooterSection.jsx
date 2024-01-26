@@ -14,9 +14,6 @@ const FooterSection = () => {
           <li>Home </li>
           <li>About</li>
           <li>Menu</li>
-          <li>Reservations</li>
-          <li>Order</li>
-          <li>Login</li>
         </ul>
       </div>
       <div className='contact-footer'>

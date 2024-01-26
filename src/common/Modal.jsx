@@ -1,21 +1,24 @@
-import React from 'react'
-import { Modal as ModalChakra, ModalBody, ModalHeader, ModalFooter } from "@chakra-ui/react";
+import React from 'react';
+import Modal from 'react-bootstrap/Modal';
 
-
-const Modal = ({ modalProperties, modalHeader, modalFooter, children }) => {
+const CustomModal = ({ modalStyleProperties, modalHeader, modalFooter, children, isOpen, handleClose }) => {
     return (
-        <ModalChakra {...modalProperties}>
-            {modalHeader ? <ModalHeader>
-                {modalHeader}
-            </ModalHeader> : null}
-            <ModalBody>
+        <Modal centered size='xl' onHide={handleClose} show={isOpen} style={modalStyleProperties}>
+            {modalHeader ? (
+                <Modal.Header>
+                    {modalHeader}
+                </Modal.Header>
+            ) : null}
+            <Modal.Body>
                 {children}
-            </ModalBody>
-            {modalFooter ? <ModalFooter>
-                {modalFooter}
-            </ModalFooter> : null}
-        </ModalChakra>
-    )
+            </Modal.Body>
+            {modalFooter ? (
+                <Modal.Footer>
+                    {modalFooter}
+                </Modal.Footer>
+            ) : null}
+        </Modal>
+    );
 }
 
-export default Modal
+export default CustomModal;
