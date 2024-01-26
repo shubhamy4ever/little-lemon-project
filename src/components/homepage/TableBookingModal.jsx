@@ -10,8 +10,6 @@ const TableModalHeader = () => <h4>Reserve a table</h4>
 const TableModalFooter = ({ handleClose }) => <Button colorScheme='red' onClick={handleClose}>Cancel Booking</Button>
 
 const TableBookingModal = ({ isOpen, handleClose }) => {
-    //   context for alert to no api just wait some seconds and show success message and an alert with success or false using context, and loader
-    // submit for review
 
 
     const { openAlert } = useContext(AlertContext);
