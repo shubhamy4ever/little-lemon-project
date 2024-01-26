@@ -4,6 +4,7 @@ import React from 'react'
 const HeroSection = () => {
   return (
     <div id='herosection'>
+
       <aside id='aside-hero'>
         <h1>Little Lemon</h1>
         <h4>Mumbai</h4>
@@ -13,7 +14,7 @@ const HeroSection = () => {
           recipes served with a modern
           twist.</p>
         <Button mt={2} colorScheme='yellow' size='md'>
-          Reserve a Table
+          Reserve a table
         </Button>
       </aside>
       <main id='image-hero'>

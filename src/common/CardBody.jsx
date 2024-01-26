@@ -2,9 +2,9 @@ import React from 'react'
 import { Card, CardBody as CardBodyChakra } from "@chakra-ui/react";
 
 
-const CardBody = ({ children }) => {
+const CardBody = ({ children, className }) => {
     return (
-        <Card>
+        <Card className={className}>
             <CardBodyChakra>
                 {children}
             </CardBodyChakra>

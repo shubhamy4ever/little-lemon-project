@@ -2,11 +2,11 @@
 nav>ul {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-ul>li {
+nav>ul>li {
     padding: 20px 30px;
     list-style: none;
     font-weight: 700;
@@ -26,7 +26,7 @@ nav>ul>li:hover {
 #aside-hero {
     grid-area: asidehero;
     text-wrap: pretty;
-    padding: 40px;
+    padding: 60px;
     padding-left: 80px;
     display: flex;
     align-items: flex-start;
@@ -41,18 +41,19 @@ nav>ul>li:hover {
 }
 
 #herosection {
-    height: 300px;
+    height: 360px;
     background-color: var(--olive-green);
     display: grid;
     grid-template: "asidehero imagehero";
-    grid-template-columns: 60vw 40vw;
+    grid-template-columns: 45% 55%;
+    padding: 0px 212px;
 }
 
 #image-hero>img {
     border-radius: 50px;
-    margin-top: 21px;
+    margin-top: 40px;
     height: 360px;
-    width: 460px;
+    width: 450px;
 }
 
 #aside-hero>h1 {
@@ -70,18 +71,7 @@ nav>ul>li:hover {
 
 
 
-/* media query to make it vertical on mobile */
 
-@media only screen and (max-width: 600px) {
-    #herosection {
-        grid-template: "asidehero";
-        grid-template-columns: repeat(1, 100vw);
-    }
-
-    #image-hero {
-        display: none;
-    }
-}
 
 
 /* Special dishes */
@@ -89,7 +79,7 @@ nav>ul>li:hover {
 #order-online-header {
     grid-area: orderOnlineArea;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 100px;
     flex-wrap: wrap;
 }
@@ -113,4 +103,230 @@ nav>ul>li:hover {
 .food-details-container {
     margin: 20px;
     width: 300px;
+
+}
+
+.food-price {
+    color: var(--yellow);
+}
+
+.food-detail-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.food-detail-description {
+    margin: 40px 10px;
+}
+
+.food-order-link {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* testimonials */
+
+#testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 20px;
+    flex-direction: column;
+}
+
+.testimonials-card-container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 140px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.testimonial-detail-container {
+    margin: 20px;
+}
+
+.testimonial-card {
+    width: 220px;
+    text-align: center;
+}
+
+.testimonial-detail-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 4px;
+}
+
+/* Resturant details */
+#image-resturantdetails {
+    grid-area: imageresturant;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+#aside-resturantdetails {
+    grid-area: asideresturant;
+    text-wrap: pretty;
+    padding: 60px;
+    padding-left: 80px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#resturantdetails {
+    height: 500px;
+    background-color: var(--yellow);
+    display: grid;
+    grid-template: "asideresturant imageresturant";
+    grid-template-columns: 45% 55%;
+    padding: 40px 200px;
+}
+
+#image-resturantdetails>img:nth-child(1) {
+    z-index: 1;
+    position: relative;
+    top: 28px;
+    height: 320px;
+    width: 320px;
+    left: 80px;
+
+}
+
+#image-resturantdetails>img:nth-child(2) {
+    z-index: 2;
+    position: relative;
+    bottom: 28px;
+    height: 320px;
+    width: 320px;
+}
+
+
+
+#aside-resturantdetails>h1,
+h4,
+p {
+    color: black;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    #resturantdetails {
+        padding: 40px 134px 40px 10px;
+    }
+}
+
+
+/* media query to make it vertical on mobile */
+@media only screen and (max-width: 768px) and (min-width:200px) {
+    .testimonials-card-container {
+        margin: 0px !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 568px) and (min-width:200px) {
+    footer>div {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width:768px) {
+    #herosection {
+        grid-template-columns: 45% 55%;
+        padding: 0px 20px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    #herosection {
+        grid-template: "asidehero";
+        grid-template-columns: repeat(1, 100vw);
+        padding: 0px 10px;
+    }
+
+    #image-hero {
+        display: none;
+    }
+
+
+
+    #aside-hero {
+        padding: 40px 20px;
+    }
+
+    #aside-resturantdetails {
+        padding: 40px 20px;
+    }
+
+    #resturantdetails {
+        grid-template: "asideresturant";
+        grid-template-columns: 100%;
+        padding: 10px 60px !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 990px) {
+    #image-resturantdetails {
+        display: none !important;
+    }
+
+    #resturantdetails {
+        grid-template: "asideresturant";
+        grid-template-columns: 100%;
+        padding: 10px 100px;
+    }
+}
+
+
+
+/* footer */
+
+footer {
+    display: flex;
+    background: var(--olive-green);
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+footer>div {
+    margin-left: 40px;
+}
+
+
+
+footer h4 {
+    color: white;
+}
+
+footer img {
+    height: 140px;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contact-footer {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 }

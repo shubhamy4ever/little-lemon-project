@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 :root {
   --yellow: #ecc94b;
   --white: #ffffff;
@@ -7,13 +9,13 @@
 }
 
 h1 {
-  font-size: 28px !important;
-  font-weight: 800 !important;
+  font-size: 30px !important;
+  font-weight: bolder !important;
 }
 
 h4 {
   font-size: 20px !important;
-  font-weight: 400 !important;
+  font-weight: bold !important;
 }
 
 * {

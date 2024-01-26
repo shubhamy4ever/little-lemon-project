@@ -11,6 +11,7 @@ const NavigationBar = () => {
         <li><a href="/orderonline">Order online</a></li>
         <li><a href="/menu">Menu</a></li>
         <li><a href="/reservations">Reservations</a></li>
+        <li><a href="/login">Login</a></li>
       </ul>
     </nav>
   )
