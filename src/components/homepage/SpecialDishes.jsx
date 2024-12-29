@@ -17,7 +17,7 @@ const SpecialDishes = () => {
     "title": "Muffin Mix",
     "description": "quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet cursus id quam fringilla quam fringilla quam fringilla",
     "price": "$8.45",
-    "image": "https://food.theffeed.com/wp-content/uploads/sites/7/2024/01/veggie_pizza-2-e1705588115938-250x250.jpg"
+    "image": "https://static01.nyt.com/images/2021/02/17/dining/17tootired-grilled-cheese/17tootired-grilled-cheese-mediumSquareAt3X.jpg"
   }, {
     "id": 3,
     "title": "Grouper",
